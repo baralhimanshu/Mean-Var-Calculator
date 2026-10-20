@@ -7,12 +7,12 @@ def calculate(input_list):
     else:
         ar = np.array(input_list).reshape(3,3)
     
-    column_mean, row_mean, total_mean = np.mean(ar,axis = 0).tolist(), np.mean(ar,axis = 1).tolist(), np.mean(ar).tolist()
-    column_sd , row_sd , total_sd = np.std(ar, axis = 0).tolist(), np.std(ar, axis =1).tolist(), np.std(ar).tolist()
-    column_var, row_var, total_var = np.var(ar, axis =0).tolist(), np.var(ar, axis =1).tolist(), np.var(ar).tolist()
-    column_max, row_max, total_max = np.max(ar, axis = 0).tolist(), np.max(ar, axis =1).tolist(), np.max(ar).tolist()
-    column_min, row_min, total_min = np.min (ar, axis =0).tolist(), np.min(ar, axis = 1).tolist(), np.min(ar).tolist()
-    column_sum, row_sum, total_sum = np.sum(ar, axis =0).tolist(), np.sum (ar,axis = 1 ).tolist(), np.sum(ar).tolist()
+    column_mean, row_mean, total_mean = np.mean(ar,axis = 0).tolist(), np.mean(ar,axis = 1).tolist(), np.mean(ar)
+    column_sd , row_sd , total_sd = np.std(ar, axis = 0).tolist(), np.std(ar, axis =1).tolist(), np.std(ar)
+    column_var, row_var, total_var = np.var(ar, axis =0).tolist(), np.var(ar, axis =1).tolist(), np.var(ar)
+    column_max, row_max, total_max = np.max(ar, axis = 0).tolist(), np.max(ar, axis =1).tolist(), np.max(ar)
+    column_min, row_min, total_min = np.min (ar, axis =0).tolist(), np.min(ar, axis = 1).tolist(), np.min(ar)
+    column_sum, row_sum, total_sum = np.sum(ar, axis =0).tolist(), np.sum (ar,axis = 1 ).tolist(), np.sum(ar)
   
     calculations = {
         "mean" : [column_mean, row_mean, total_mean],
